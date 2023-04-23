@@ -26,3 +26,19 @@ React allows you to create re-usable and reactive components consisting of HTML 
 
 This is done in a Declarative Approach.  This means that we write code that describes what we want to happen, and React takes care of the DOM manipulation for us.  We don't have to worry about how the DOM is updated.  We just have to worry about what we want to happen.  We define the desired target state(s) and let React figure out the actual JavaScript DOM instructions.
 
+##Lesson 3 : Creating A React Project
+
+###Create React App
+
+To use the create-react-app tool, we need first need to install Node.js.  Node.js is a JavaScript runtime environment.  It allows us to run JavaScript outside of the browser.  
+
+```npx create-react-app my-app``` , where my-app is the desired name of the project.  This will create a new folder called my-app, and it will install all of the dependencies that we need to get started.  It will also set up a development server for us, so that we can see our application in the browser as we build it.  It will also set up a build process for us, so that we can deploy our application to a production server.  It will also set up a test runner for us, so that we can write tests for our application.
+
+###Run the Development Server  
+
+CD into the project directory and run 
+
+```npm start```  
+
+This will start the dev server which hosts a preview of the react app and will automatically open up localhost:3000 in your browser.
+
