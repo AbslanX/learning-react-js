@@ -42,3 +42,6 @@ CD into the project directory and run
 
 This will start the dev server which hosts a preview of the react app and will automatically open up localhost:3000 in your browser.
 
+##Lesson 4 : Building a Custom React Component
+
+-- check notes in ExpenseItem.js, App.js
