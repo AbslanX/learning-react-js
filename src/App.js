@@ -1,6 +1,7 @@
 import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
+  //dummy data
   const expenses = [
     {
       id: "e1",
