@@ -1,9 +1,21 @@
-//naming convention for components is to start with a capital letter and camel case the rest of the name. example: ExpenseItem.js
-//a component is a javascript function that returns some jsx
-
 function ExpenseItem() {
-    return <h2>Expense item!</h2>
+  //Invalid JSX code
+  //return <div>Date</div><div><h2>Title</h2><div>Amount</div></div>;
+
+  //one way to resolve this is by surrounding the code with a root element.
+  return (
+    <div>
+      <div>March 28th, 2021</div>
+      <div>
+        <h2>Car Insurance</h2>
+        <div>$249.67</div>
+      </div>
+    </div>
+  );
 }
 
-//it is necessary to export the component to use it in another component
 export default ExpenseItem;
+
+//You must only have one root element per return statement, or JSX code block.
+//The code block : "<div>Date</div><div><h2>Title</h2><div>Amount</div></div>"" is not valid JSX code
+//because it has two root elements: <div>Date</div> and <div><h2>Title</h2><div>Amount</div></div>.
