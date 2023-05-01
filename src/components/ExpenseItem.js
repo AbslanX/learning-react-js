@@ -1,4 +1,3 @@
-//We have to tell React which files to include in the build process. We do this by importing them into our App.js file. We can import them by using the relative path
 import './ExpenseItem.css';
 
 function ExpenseItem() {
