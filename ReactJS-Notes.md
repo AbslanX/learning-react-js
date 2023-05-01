@@ -45,3 +45,7 @@ This will start the dev server which hosts a preview of the react app and will a
 ##Lesson 4 : Building a Custom React Component
 
 -- check notes in ExpenseItem.js, App.js
+
+##Lesson 5 : A More Complex Component
+
+-- check notes in ExpenseItem.js
