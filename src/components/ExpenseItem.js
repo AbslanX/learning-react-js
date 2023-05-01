@@ -1,21 +1,16 @@
-function ExpenseItem() {
-  //Invalid JSX code
-  //return <div>Date</div><div><h2>Title</h2><div>Amount</div></div>;
+//We have to tell React which files to include in the build process. We do this by importing them into our App.js file. We can import them by using the relative path
+import './ExpenseItem.css';
 
-  //one way to resolve this is by surrounding the code with a root element.
+function ExpenseItem() {
   return (
-    <div>
+    <div className='expense-item'>
       <div>March 28th, 2021</div>
-      <div>
+      <div className='expense-item__description'>
         <h2>Car Insurance</h2>
-        <div>$249.67</div>
+        <div className='expense-item__price'>$249.67</div>
       </div>
     </div>
   );
 }
 
 export default ExpenseItem;
-
-//You must only have one root element per return statement, or JSX code block.
-//The code block : "<div>Date</div><div><h2>Title</h2><div>Amount</div></div>"" is not valid JSX code
-//because it has two root elements: <div>Date</div> and <div><h2>Title</h2><div>Amount</div></div>.

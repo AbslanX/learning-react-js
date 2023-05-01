@@ -49,3 +49,9 @@ This will start the dev server which hosts a preview of the react app and will a
 ##Lesson 5 : A More Complex Component
 
 -- check notes in ExpenseItem.js
+
+##Lesson 6 : Adding Styling to a Component
+
+-- check notes in ExpenseItem.js
+
+JSX is not HTML.  It is really javascript.  Because of this, some of the html attributes are different.  For example, class is now className.  This is because class is a reserved word in javascript.  Also, we can't use the word for in JSX.  We have to use htmlFor instead.  This is because for is a reserved word in javascript.
