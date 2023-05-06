@@ -2,9 +2,7 @@ import React from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
-    //since we passed the onChange function as a reference, we can use it here
-    //the event object is automatically passed by react
-    //event.target.value is the value of the input field at the time of the event
+    
     const titleChangeHandler = (event) => {
         console.log(event.target.value);
     };
