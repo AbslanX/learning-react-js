@@ -16,10 +16,22 @@ const ExpenseForm = () => {
     const titleChangeHandler = (event) => {
         //setEnteredTitle(event.target.value);
         
-        setUserInput({
-            ...userInput,
-            enteredTitle: event.target.value
+        // setUserInput({
+        //     ...userInput,
+        //     enteredTitle: event.target.value
+        // });
+
+        //whenever you update state and you depend on the previous state, you should use this syntax
+        //this is because react schedules state updates and does not execute them immediately
+        //therefore, if you schedule multiple state updates, you cannot guarantee that the previous state will be the same
+        //this approach guarantees that the state snapshot will always be the latest one
+        //keeping all scheduled state updates in mind
+        
+        //Important: Whenever you update state and you depend on the previous state, always use this syntax
+        setUserInput((prevState) => {
+            return {...prevState, enteredTitle: event.target.value};
         });
+
     };
 
     const amountChangeHandler = (event) => {
