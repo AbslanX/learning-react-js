@@ -22,12 +22,7 @@ const ExpenseForm = () => {
         setEnteredDate(event.target.value);
 
     };
-
-    //when a form contains a button of type submit, the form itself will emit an event
-    //so we can add the onSubmit listener to the form
-    //part of this default behavior, the page reloads when the form is submitted because the browser sends a request to the server
-    //we can prevent this default behavior by adding the preventDefault() method
-    
+   
     const submitHandler = (event) => {
         event.preventDefault();
 
@@ -37,8 +32,6 @@ const ExpenseForm = () => {
             date: new Date(enteredDate)
         };
 
-        //using two way binding, we can reset the form after the user submits the form
-        //we can use the value prop to set the value of the input field (see value={enteredTitle} in the xhmtl code)
         console.log(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
@@ -53,9 +46,6 @@ const ExpenseForm = () => {
             <div className="new-expense__controls">
                 <div className="new-expense__control"> 
                     <label>Title</label>
-                    {/* value={enteredTitle} is how we use two way binding in a form
-                    this allows us to change the value upon form submit
-                    in this example, we are setting the form back to '' after submit */}
                     <input type="text" value={enteredTitle} onChange={titleChangeHandler}/>
                 </div>
                 <div className="new-expense__control"> 
