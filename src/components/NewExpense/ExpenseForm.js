@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
-    
+    //Here is an example of working with multiple states
+    //This is totally valid, but there is a better way to do this
+    //This is the most basic way
+    //In the next lesson, we will learn how to do this using a single state
+
+    const [enteredTitle, setEnteredTitle] = useState('');
+    const [enteredAmount, setEnteredAmount] = useState('');
+    const [enteredDate, setEnteredDate] = useState('');
+
     const titleChangeHandler = (event) => {
-        console.log(event.target.value);
+        setEnteredTitle(event.target.value);
     };
 
     const amountChangeHandler = (event) => {
-        console.log(event.target.value);
+        setEnteredAmount(event.target.value);
     };
 
     const dateChangeHandler = (event) => {
-        console.log(event.target.value);
+        setEnteredDate(event.target.value);
     };
 
     return (
