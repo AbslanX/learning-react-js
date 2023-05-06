@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
-    //Here is an example of working with multiple states
-    //This is totally valid, but there is a better way to do this
-    //This is the most basic way
-    //In the next lesson, we will learn how to do this using a single state
-
+    
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
