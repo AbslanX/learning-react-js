@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
-//we are passing the function from the parent component to the child component
-//the function is passed as a prop
-//so now we add the props parameter to the function
-
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
@@ -31,11 +27,6 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate),
     };
 
-    //we are calling the function that we got from the parent component
-    //we are passing the data to the parent component
-    //instead of onSubmit, we can call onSaveExpenseData from the parent component
-    //and pass the expenseData to the parent component
-    
     props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
